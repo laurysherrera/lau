@@ -1,0 +1,87 @@
+//se le da nombre a la clase principal
+public class reloj{
+//atributos de la clase 
+    private int precio;
+    private string marca,color; 
+//consulta la informacion que le damos al precio
+    public int getprecio(){
+//funcion que devuelve el valor y llama al precio
+        return this.precio;
+   }
+//cosultar la informacion que le damos a color
+    public string getcolor(){
+//funcion que devuelve al valor y llama a color
+        return this.color;
+    }
+//consultar la informacion que le damos a marca
+    public string getmarca(){
+//funcion que devuelve al valor y llama a marca
+        return this.marca;    
+    }
+//configura la informacion que le damos a precio
+    public void setprecio (int precio){
+//funcion que llama a precio
+        this.precio=precio;
+    }
+//configura la informacion que le damos a color
+    public void setcolor (string color){
+//funcion que llama a color
+        this.color=color;
+    }
+//configura la informacion que le damos a marca
+    public void setmarca (String marca){
+//funcion que llama a marca
+        this.marca=marca;
+    }
+//lee y muestra en console la informacion 
+public void Tostring(){
+Console.WriteLine ("el reloj " +this.marca + " de color " + this.color + " cuesta " + this.precio);
+}
+}
+//se le da un nombre a la clase 
+public class relojeria{
+//inicia el procedimiento del programa 
+    public static void Main(String[] args){
+//define las instancias de reloj como RICHAR y la inicializo como nueva
+reloj RICHAR = new reloj();
+//define las instancias de reloj como RICHAR y la inicializo como nueva
+reloj PATEK = new reloj();
+//define las instancias de reloj como RICHAR y la inicializo como nueva
+reloj ROLEX = new reloj();
+//define las instancias de reloj como RICHAR y la inicializo como nueva
+reloj AUDEMARS = new reloj();
+//se le agrega valores a la instancia
+ RICHAR.setmarca("RICHAR MILLE");
+//se le agrega valores a la instancia
+ RICHAR.setcolor("ROJO");
+//se le agrega valores a la instancia
+ RICHAR.setprecio(306993);
+//se le agrega valores a la instancia
+ PATEK.setmarca("PATEK PHILIPPE");
+//se le agrega valores a la instancia
+ PATEK.setcolor("BLANCO");
+//se le agrega valores a la instancia
+ PATEK.setprecio(407893);
+//se le agrega valores a la instancia
+ ROLEX.setmarca("ROLEX");
+//se le agrega valores a la instancia
+ ROLEX.setcolor("NEGRO");
+//se le agrega valores a la instancia 
+ ROLEX.setprecio(746524);
+//se le agrega valores a la instancia
+ AUDEMARS.setmarca("AUDEMARS PIGUET");
+//se le agrega valores a la instancia
+ AUDEMARS.setcolor("DORADO");
+//se le agrega valores a la instancia
+ AUDEMARS.setprecio(748376);
+//se llama a la cadena de texto
+ RICHAR.Tostring();
+//se llama a la cadena de texto
+ AUDEMARS.Tostring();
+//se llama a la cadena de texto
+ ROLEX.Tostring();
+//se llama a la cadena de texto
+ PATEK.Tostring();
+}
+
+}
